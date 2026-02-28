@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Static Website</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+    header { background: #2c3e50; color: white; padding: 20px; text-align: center; }
+    nav { background: #34495e; padding: 10px; text-align: center; }
+    nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
+    nav a:hover { text-decoration: underline; }
+    section { padding: 40px; }
+    h1, h2 { color: #2c3e50; }
+    p { color: #555; line-height: 1.6; }
+    img { max-width: 100%; border-radius: 8px; margin-top: 20px; }
+    footer { background: #2c3e50; color: white; text-align: center; padding: 15px; margin-top: 40px; }
+    .container { max-width: 900px; margin: auto; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to My Static Website</h1>
+    <p>Hosted on AWS EC2 with Apache2</p>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="home" class="container">
+    <h2>Home</h2>
+    <p>This is a sample static website deployed from my GitHub repository. 
+       It demonstrates how to use Apache2 and Git on an Ubuntu EC2 instance.</p>
+    <img src="https://via.placeholder.com/800x300.png?text=Welcome+Banner" alt="Banner">
+  </section>
+
+  <section id="about" class="container">
+    <h2>About</h2>
+    <p>My name is Himanshu, and I’m learning AWS, EC2, S3, IAM, and DevOps tools. 
+       This site is part of my cloud labs where I practice deploying code securely.</p>
+  </section>
+
+  <section id="gallery" class="container">
+    <h2>Gallery</h2>
+    <p>Here are some placeholder images to simulate a gallery section.</p>
+    <img src="https://via.placeholder.com/300x200.png?text=Image+1" alt="Image 1">
+    <img src="https://via.placeholder.com/300x200.png?text=Image+2" alt="Image 2">
+    <img src="https://via.placeholder.com/300x200.png?text=Image+3" alt="Image 3">
+  </section>
+
+  <section id="contact" class="container">
+    <h2>Contact</h2>
+    <p>You can reach me at <a href="mailto:himanshu@example.com">himanshu@example.com</a>.</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 My Static Website | Powered by Apache2 on AWS EC2</p>
+  </footer>
+</body>
+</html>
